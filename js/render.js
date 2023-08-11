@@ -253,11 +253,7 @@ const playSlideShow = (slideInd, isFirst, toggleId = 0) => {
   const imgSrc = isFirst ? SLIDE_LANDING : SLIDE_LIST[slideInd].src;
   imgElement.src = `${imgSrc}${IS_LANDSCAPE ? 'w' : ''}.jpg`;
   imgElement.style.zIndex = -1;
-  if (isFirst){
-    imgElement.style.opacity = 1;
-  } else {
-    fadeIn(imgElement);
-  }
+  imgElement.style.opacity = 1;
 
   // setTimeout(() => {
   //   imgElement.style.zIndex = -2;
@@ -306,7 +302,7 @@ const scrollLogo = (el, left, finalLeft) => {
   const scrollSpeed = IS_LANDSCAPE ? 1.5 : 5;
   return new Promise(resolve => {
     if (left <= finalLeft) {
-      document.getElementById('js-btn-gallery-wr').style.display = 'block';
+      document.getElementById('js-btn-gallery-wr').style.display = 'flex';
       return resolve();
     }
     setTimeout(() => {
@@ -352,12 +348,15 @@ const renderLanding = (skipIntro = false) => {
   //   return bRand - aRand;
   // });
 
+  const className = IS_LANDSCAPE ? 'coming-soon' : 'coming-soon-mobile';
+  document.getElementById('js-coming-soon').classList.add(className);
+
   document.getElementById('js-img-0').style.height = `${getHeight()}px`;
   document.getElementById('js-img-1').style.height = `${getHeight()}px`;
 
   // document.getElementById('js-img-1').src = './img/m2.jpg'; // test purpose
   if (skipIntro) {
-    document.getElementById('js-btn-gallery-wr').style.display = 'block';
+    document.getElementById('js-btn-gallery-wr').style.display = 'flex';
   } else {
     displayIntro();
   }

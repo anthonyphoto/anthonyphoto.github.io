@@ -1,143 +1,158 @@
 <!DOCTYPE html>
 <html lang='en'>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <!-- <meta name="viewport" content="width=device-width"> -->
-  	<meta name="description" content="Anthony Kim">
-    <meta property="og:title" content="Anthony Kim">
-    <meta property="og:description" content="Philadelphia based Software Engineer">
-    <meta property="og:image" content="./img/thumb.png">
-    <title>Anthony Kim</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Tangerine&display=swap" rel="stylesheet"> -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
-    <link href="./css/index.css" rel="stylesheet" type="text/css" />
-    <link href="./css/common.css" rel="stylesheet" type="text/css" />
-    <link rel="icon" href="./img/favi.png" type="image/x-icon"/>
-  </head>
-  <body>
-    <header role='banner' id='js-slide-show' class='slide-show-wr'>
-      <img id='js-logo' class='intro' src='./img/logo-l.png' />
-      <img id='js-img-0' class='slide-show' />
-      <img id='js-img-1' class='slide-show' />
-      <div id='js-btn-gallery-wr' class='fi hidden'>
-        <button id='js-btn-gallery' type="submit" class="btn-black fi-short btn-gallery">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!-- <meta name="viewport" content="width=device-width"> -->
+  <meta name="description" content="Anthony Kim">
+  <meta property="og:title" content="Anthony Kim">
+  <meta property="og:description" content="Philadelphia based Software Engineer">
+  <meta property="og:image" content="./img/thumb.jpg">
+  <title>Anthony Kim</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Tangerine&display=swap" rel="stylesheet"> -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+  <link href="./css/index.css" rel="stylesheet" type="text/css" />
+  <link href="./css/common.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="./img/favi.png" type="image/x-icon" />
+</head>
+
+<body>
+  <header role='banner' id='js-slide-show' class='slide-show-wr'>
+    <center>
+      <span id='js-coming-soon' class=''>Coming soon</span>
+    </center>
+    <img id='js-logo' class='intro' src='./img/logo-l.png' />
+    <img id='js-img-0' class='slide-show' />
+    <img id='js-img-1' class='slide-show' />
+    <div id='js-btn-gallery-wr' class='flex btn-gallery fi hidden'>
+      <div class='tmp-desc'>
+        <center>
+          Sorry my site is being revamped now. Please enjoy my personal photography page.
+        </center>
+      </div>
+      <button id='js-btn-gallery' type="submit" class="btn-black fi-short">
         <!-- <button id='js-btn-gallery' type="submit" onclick="handleOpenMenu()" class="btn-black fi-short btn-gallery"> -->
-          <a href="mailto:anthony@anthonyspace.com" style='font-size: 0.9rem'>
-            <!-- <img style='width: 1rem' class='logo-contact' src='./img/logo-email.png' /> -->
-            anthony@anthonyspace.com
-          </a>
-        </button>
-      </div>
-    </header>
-    <main role='main' id='js-main'>
-      <div class='top-band'>
-        <div class='back-link' onClick="resumeSlideShow()">
-          &lt; Back to Slide Show
-        </div>
-        <!-- <img onClick="renderLanding(true);" class='logo-band' src='./img/logo-s-white.png' /> -->
-      </div>
-      <div id='js-catch-wr' class='text-title'>
-        <div id='js-catch-portraits' style='display:none;'>
-          <span class='span-l fi-short'>Portraits</span>
-          <span class='nowrap fi'>
-            <span class='span-s'>of</span> 
-            <span class='span-m'>Life</span>
-          </span>
-        </div>
-        <div id='js-catch-events' style='display:none;'>
-          <span class='span-l fi-short'>Essence</span> 
-          <span class='span-s fi'>of Memories</span>
-        </div>
-        <div id='js-catch-others' style='display:none;'>
-          <span class='span-l fi-short'>Through</span>
-          <span class='nowrap fi'>
-            <span class='span-s'>the</span> 
-            <span class='span-m'>Lens</span>
-          </span>
-        </div>
-      </div>
+        <a href="https://photo.anthonyspace.com" style='font-size: 0.9rem'>
+          Anthony Photography
+          <!-- <img onClick="renderLanding(true);" width='250px' src='./img/logo-s-white.png' /> -->
 
-      <div class='desc fi-short'>
-        <span>Based in Philadelphia</span><br />
-        <a href="mailto:anthony@anthonyspace.com">
+        </a>
+      </button>
+      <!-- <a href="mailto:anthony@anthonyspace.com" style='font-size: 0.9rem'>
           anthony@anthonyspace.com
-        </a>
-        
+        </a> -->
+    </div>
+  </header>
+  <main role='main' id='js-main'>
+    <div class='top-band'>
+      <div class='back-link' onClick="resumeSlideShow()">
+        &lt; Back to Slide Show
       </div>
-      <div class='flex m-top-1 fi-short'>
-        <a href="mailto:anthony@anthonyspace.com">
-          <img class='logo-contact' src='./img/logo-email.png' />
-        </a>
-        <a href="https://www.linkedin.com/in/myanthony/">
-          <img class='logo-contact' src='./img/logo-linkedin.png' />
-        </a>
-        <a href="https://www.instagram.com/anthony_philly/"><img class='logo-contact' src='./img/logo-insta.png' /></a>
+      <!-- <img onClick="renderLanding(true);" class='logo-band' src='./img/logo-s-white.png' /> -->
+    </div>
+    <div id='js-catch-wr' class='text-title'>
+      <div id='js-catch-portraits' style='display:none;'>
+        <span class='span-l fi-short'>Portraits</span>
+        <span class='nowrap fi'>
+          <span class='span-s'>of</span>
+          <span class='span-m'>Life</span>
+        </span>
       </div>
-      <div class='flex menu-wr fi-short'>
-        <span id='js-portraits' onClick='handleMenuClicked("portraits")' class='menu'>
-          PORTRAITS
-        </span> 
-        <span>&nbsp; | &nbsp;</span> 
-        <span id='js-events' onClick='handleMenuClicked("events")' class='menu'>
-          EVENTS
-        </span> 
-        <span>&nbsp; | &nbsp;</span> 
-        <span id='js-others' onClick='handleMenuClicked("others")' class='menu'>
-          OTHERS
-        </span> 
+      <div id='js-catch-events' style='display:none;'>
+        <span class='span-l fi-short'>Essence</span>
+        <span class='span-s fi'>of Memories</span>
       </div>
-      <!-- <div class='empty-block'></div> -->
+      <div id='js-catch-others' style='display:none;'>
+        <span class='span-l fi-short'>Through</span>
+        <span class='nowrap fi'>
+          <span class='span-s'>the</span>
+          <span class='span-m'>Lens</span>
+        </span>
+      </div>
+    </div>
 
-      <!-- <div id='js-top-portrait' class='hidden'></div>       -->
-      <div class='m-top-2'> </div>
+    <div class='desc fi-short'>
+      <span>Based in Philadelphia</span><br />
+      <a href="mailto:anthony@anthonyspace.com">
+        anthony@anthonyspace.com
+      </a>
 
-      <div id='js-frame-wr' class='fi-short hidden'>
-        <div id='js-section-loader' class='section-loader'>
-            <img src='./img/loading-1.gif' style='height: 60%' /><br />
-            <span class='section-loader-text'>Frames are being loaded now...</span>
-        </div>
+    </div>
+    <div class='flex m-top-1 fi-short'>
+      <a href="mailto:anthony@anthonyspace.com">
+        <img class='logo-contact' src='./img/logo-email.png' />
+      </a>
+      <a href="https://www.linkedin.com/in/myanthony/">
+        <img class='logo-contact' src='./img/logo-linkedin.png' />
+      </a>
+      <a href="https://www.instagram.com/anthony_philly/"><img class='logo-contact' src='./img/logo-insta.png' /></a>
+    </div>
+    <div class='flex menu-wr fi-short'>
+      <span id='js-portraits' onClick='handleMenuClicked("portraits")' class='menu'>
+        PORTRAITS
+      </span>
+      <span>&nbsp; | &nbsp;</span>
+      <span id='js-events' onClick='handleMenuClicked("events")' class='menu'>
+        EVENTS
+      </span>
+      <span>&nbsp; | &nbsp;</span>
+      <span id='js-others' onClick='handleMenuClicked("others")' class='menu'>
+        OTHERS
+      </span>
+    </div>
+    <!-- <div class='empty-block'></div> -->
+
+    <!-- <div id='js-top-portrait' class='hidden'></div>       -->
+    <div class='m-top-2'> </div>
+
+    <div id='js-frame-wr' class='fi-short hidden'>
+      <div id='js-section-loader' class='section-loader'>
+        <img src='./img/loading-1.gif' style='height: 60%' /><br />
+        <span class='section-loader-text'>Frames are being loaded now...</span>
       </div>
-      <div id='js-frame-e-wr' class='fi-short hidden'></div>
-      <div class='bg-white'>
-        <span id='js-top-pic-title' class='pic-text flex'></span>
-      </div>
+    </div>
+    <div id='js-frame-e-wr' class='fi-short hidden'></div>
+    <div class='bg-white'>
+      <span id='js-top-pic-title' class='pic-text flex'></span>
+    </div>
 
-      <div id='js-pics' class='pics-wr' style="background-color: #fff;"></div>
+    <div id='js-pics' class='pics-wr' style="background-color: #fff;"></div>
 
-      <!-- <div class='m-top-3 flex fi-short'>
+    <!-- <div class='m-top-3 flex fi-short'>
         <a href="./index.html">
           <img id='js-logo-main' class='logo-main' src='./img/logo-s-blk.png' />
         </a>
       </div> -->
-      <!-- <div class='m-top-3 flex fi-short'>
+    <!-- <div class='m-top-3 flex fi-short'>
         Choose a category
       </div> 
       <div class='flex fi_short'>
         <img src='./img/down-arrow.gif' class="down-arrow">
       </div>  
       -->
-    </main>
-    <div id='js-top-btn-wr' class='top-btn-wr fi-short'>
-      <img src='./img/top-btn.svg' class='top-btn' onClick='scrollToTop()'>
-    </div>
-    <div id='js-loader' class='loader-wr'>
-        <img src='./img/loading-1.gif' class='loader' />
-        <span class='loader-text'>Portfolio images are being loaded now...</span>
-        <img class='logo-main loader-logo' src='./img/logo-s-blk.png' />
-    </div>
-    <footer role='contentinfo' class='copyright fi'>
-      © 2023 Anthony Photography
-    </footer>
-  </body>
-  <script type="text/javascript" src="./js/utils.js"></script>
-  <script type="text/javascript" src="./js/event-handler.js"></script>
-  <script type="text/javascript" src="./js/data.js"></script>
-  <script type="text/javascript" src="./js/render.js"></script>
+  </main>
+  <div id='js-top-btn-wr' class='top-btn-wr fi-short'>
+    <img src='./img/top-btn.svg' class='top-btn' onClick='scrollToTop()'>
+  </div>
+  <div id='js-loader' class='loader-wr'>
+    <img src='./img/loading-1.gif' class='loader' />
+    <span class='loader-text'>Portfolio images are being loaded now...</span>
+    <img class='logo-main loader-logo' src='./img/logo-s-blk.png' />
+  </div>
+  <footer role='contentinfo' class='copyright fi'>
+    © 2023 Anthony
+  </footer>
+</body>
+<script type="text/javascript" src="./js/utils.js"></script>
+<script type="text/javascript" src="./js/event-handler.js"></script>
+<script type="text/javascript" src="./js/data.js"></script>
+<script type="text/javascript" src="./js/render.js"></script>
+
 </html>

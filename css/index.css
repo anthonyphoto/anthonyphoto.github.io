@@ -17,7 +17,32 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #2a2c2d;
   font-weight: 300;
-  background-color: #fff; 
+  background-color: #fff;
+}
+
+.coming-soon {
+  font-family: 'arial black';
+  color: #c00000;
+  opacity: 0.4;
+  position: fixed;
+  font-size: 5rem;
+  letter-spacing: -0.2rem;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.coming-soon-mobile {
+  /* font-family: 'arial black'; */
+  color: #c00000;
+  opacity: 0.5;
+  position: fixed;
+  font-size: 4.5rem;
+  font-weight: 700;
+  /* letter-spacing: -0.2rem; */
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .loader-wr {
@@ -80,10 +105,10 @@ body {
   height: 5rem;
 
   /* should be flex */
-  display: none; 
+  display: none;
   flex-direction: column;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
 
 .top-btn {
@@ -114,7 +139,9 @@ body {
   line-height: 1.4rem;
 }
 
-a, a:link, a:visited {
+a,
+a:link,
+a:visited {
   text-decoration: none;
   letter-spacing: 0.03rem;
   display: inline-block;
@@ -133,6 +160,7 @@ a, a:link, a:visited {
   margin-top: 3.5rem;
   font-size: 1.3rem;
 }
+
 .menu {
   cursor: pointer;
 }
@@ -143,8 +171,10 @@ a, a:link, a:visited {
 
 .hidden-content {
   opacity: 0;
-  transform: translateY(20px); /* Initially move the content down by 30px */
-  transition: opacity 2.5s ease, transform 2.5s ease-in; /* ease-in slow start */
+  transform: translateY(20px);
+  /* Initially move the content down by 30px */
+  transition: opacity 2.5s ease, transform 2.5s ease-in;
+  /* ease-in slow start */
 }
 
 .pics-wr {
@@ -219,7 +249,7 @@ main {
   justify-content: space-between;
   align-items: center;
   height: 2.5rem;
-  background-color: #c00000;  
+  background-color: #c00000;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
@@ -307,8 +337,9 @@ main {
   0% {
     transform: translateX(0);
   }
+
   100% {
-    transform: translateX(calc(100vw - 666px)); 
+    transform: translateX(calc(100vw - 666px));
   }
 }
 
@@ -323,7 +354,7 @@ main {
   }
 
   100% {
-    transform: translateX(0); 
+    transform: translateX(0);
   }
 }
 
@@ -344,13 +375,26 @@ main {
 
 .btn-gallery {
   position: fixed;
-  bottom: 4%;
+  display: flex;
+  width: 85%;
+  line-height: 1.4rem;
+  flex-direction: column;
+  bottom: 5%;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.tmp-desc {
+  color: rgb(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.tmp-btn {
+  background-color: gray !important;
 }
 
 .copyright {
   text-align: center;
   display: none;
 }
-
